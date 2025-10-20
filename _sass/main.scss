@@ -2,3 +2,8 @@
 @forward 'components';
 @forward 'layout';
 @forward 'pages';
+
+// Custom CSS to add indent to parahraphs
+article.px-1 .content p {
+    text-indent: 2em;
+}
