@@ -10,9 +10,18 @@
   icon: "fas fa-envelope"
   noblank: true # open link in current tab
 
+- type: facebook
+  icon: "fab fa-facebook"
+  url: "https://www.facebook.com/khorniakmary"
+
+- type: telegram
+  icon: "fab fa-telegram"
+  url: "https://t.me/roads_of_light"
+
 - type: rss
   icon: "fas fa-rss"
   noblank: true
+
 # Uncomment and complete the url below to enable more contact options
 #
 # - type: mastodon
