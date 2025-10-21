@@ -8,32 +8,17 @@
   "
 >
   <p>
-    {{- '©' }}
+    Publications: {{- ' ©' }}
     <time>{{ 'now' | date: '%Y' }}</time>
 
     {% if site.social.links %}
-      <a href="{{ site.social.links[0] }}">{{ site.social.name }}</a>.
+      <a href="{{ site.social.links[0] }}">{{ site.social.name }}</a>
     {% else %}
-      <em class="fst-normal">{{ site.social.name }}</em>.
-    {% endif %}
-
-    {% if site.data.locales[include.lang].copyright.brief %}
-      <span
-        data-bs-toggle="tooltip"
-        data-bs-placement="top"
-        title="{{ site.data.locales[include.lang].copyright.verbose }}"
-      >
-        {{- site.data.locales[include.lang].copyright.brief -}}
-      </span>
-    {% endif %}
+      <em class="fst-normal">{{ site.social.name }}</em>
+    {% endif %} All rights reserved.
   </p>
 
   <p>
-    {%- capture _platform -%}
-      <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>
-    {%- endcapture -%}
-
-    {%- capture _theme -%}
       <a
         data-bs-toggle="tooltip"
         data-bs-placement="top"
@@ -42,8 +27,10 @@
         target="_blank"
         rel="noopener"
       >Chirpy</a>
-    {%- endcapture -%}
+      {{- ': ©' }} 2025 Cotes Chung. MIT License.
+  </p>
 
-    {{ site.data.locales[include.lang].meta | replace: ':PLATFORM', _platform | replace: ':THEME', _theme }}
+  <p>
+      Modifications: © 2025 <a href="https://www.facebook.com/merkulov.paul">Paul M.</a> All rights reserved.
   </p>
 </footer>

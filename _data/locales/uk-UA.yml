@@ -30,9 +30,9 @@ panel:
 copyright:
   # Shown at the bottom of the post
   license:
-    template: Публікація захищена ліцензією :LICENSE_NAME.
-    name: CC BY 4.0
-    link: https://creativecommons.org/licenses/by/4.0/
+    template: © 2025 :LICENSE_NAME All rights reserved.<br>Використання матеріалів без письмового дозволу не дозволяється!
+    name: Mary H.
+    link: https://www.facebook.com/khorniakmary
 
   # Displayed in the footer
   brief: Усі права захищено.
