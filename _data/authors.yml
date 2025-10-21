@@ -6,6 +6,11 @@
 #   url: {homepage_of_author}
 # -------------------------------------
 
+paul:
+  name: Paul M.
+  twitter: MerkulovPaul
+  url: https://www.facebook.com/merkulov.paul/
+
 cotes:
   name: Cotes Chung
   twitter: cotes2020
