@@ -23,7 +23,7 @@ search:
   no_results: Ох! Нічого не знайдено.
 
 panel:
-  lastmod: Нещодавно оновлено
+  lastmod: Оствннє оновлення
   trending_tags: Популярні теги
   toc: Зміст
 
@@ -35,7 +35,7 @@ copyright:
     link: https://creativecommons.org/licenses/by/4.0/
 
   # Displayed in the footer
-  brief: Деякі права захищено.
+  brief: Усі права захищено.
   verbose: >-
     Публікації на сайті захищено ліцензією Creative Commons Attribution 4.0 International (CC BY 4.0),
     якщо інше не вказано в тексті.
@@ -43,7 +43,7 @@ copyright:
 meta: Powered by :PLATFORM with :THEME theme
 
 not_found:
-  statement: Вибачте, це посилання вказує на ресурс, що не існує.
+  statement: Упс, це посилання вказує на ресурс, що не існує.
 
 notification:
   update_found: Доступна нова версія вмісту.
@@ -63,8 +63,8 @@ post:
   relate_posts: Вас також може зацікавити
   share: Поділитися
   button:
-    next: Попередня публікація
-    previous: Наступна публікація
+    next: Наступна публікація
+    previous: Попередня публікація
     copy_code:
       succeed: Успішно скопійовано!
     share_link:
