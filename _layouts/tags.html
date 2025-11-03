@@ -9,7 +9,32 @@ layout: page
     {% assign tags = tags | push: t[0] %}
   {% endfor %}
 
-  {% assign sorted_tags = tags | sort_natural %}
+  {% comment %} Create arrays for each count level {% endcomment %}
+  {% assign max_count = 0 %}
+  {% for tag in tags %}
+    {% assign count = site.tags[tag].size %}
+    {% if count > max_count %}{% assign max_count = count %}{% endif %}
+  {% endfor %}
+
+  {% assign sorted_tags = '' | split: '' %}
+  
+  {% comment %} Process from highest count to lowest {% endcomment %}
+  {% for count in (1..max_count) reversed %}
+    {% assign current_count_tags = '' | split: '' %}
+    
+    {% comment %} Find all tags with this count {% endcomment %}
+    {% for tag in tags %}
+      {% if site.tags[tag].size == count %}
+        {% assign current_count_tags = current_count_tags | push: tag %}
+      {% endif %}
+    {% endfor %}
+    
+    {% comment %} Sort this group alphabetically {% endcomment %}
+    {% assign sorted_current = current_count_tags | sort_natural %}
+    
+    {% comment %} Add to final sorted list {% endcomment %}
+    {% assign sorted_tags = sorted_tags | concat: sorted_current %}
+  {% endfor %}
 
   {% for t in sorted_tags %}
     <div>
